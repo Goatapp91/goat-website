@@ -105,14 +105,3 @@ body{background:#020203}
 .ai-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505 0%,transparent 13%,transparent 87%,#050505 100%),linear-gradient(180deg,#05050588 0%,transparent 17%,transparent 82%,#050505 100%);pointer-events:none}
 .ai-section{grid-template-columns:.95fr 1fr .66fr;gap:52px}
 @media(max-width:1100px){.hero-goat{clip-path:inset(0 5%);transform:scale(1.06)}.ai-photo img{clip-path:inset(3% 6% 7%);transform:scale(1.08)}}
-
-/* v10: live multilingual brand typography (replaces baked Polish text images) */
-.localized-art{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",Arial,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;line-height:.88;letter-spacing:-1.5px;color:#f7f7f7;text-shadow:0 3px 0 #111,0 0 18px #000;transform:skew(-5deg);transform-origin:left center}
-.localized-art span{color:var(--r);text-shadow:0 3px 0 #43000d,0 0 24px rgba(255,18,56,.28)}
-.hero-art-text{font-size:clamp(48px,5.4vw,86px);max-width:650px;margin:0 0 34px}
-.system-art-text{font-size:clamp(38px,4.1vw,68px);width:520px;max-width:48%}
-.system-art-text small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.1;letter-spacing:1.2px;color:var(--r);margin-bottom:12px;transform:skew(5deg)}
-.food-art-text{font-size:clamp(34px,3.4vw,58px);margin-bottom:30px}
-.localized-feature-label{height:105px;display:flex;align-items:center;justify-content:center;gap:14px;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",Arial,sans-serif;font-style:italic;font-size:clamp(21px,1.8vw,29px);text-transform:uppercase}
-.localized-feature-label b{font-weight:900}.feature-symbol{font-family:Arial,sans-serif;font-style:normal;color:var(--r);font-size:36px;filter:drop-shadow(0 0 10px rgba(255,18,56,.35))}
-@media(max-width:800px){.system-art-text{max-width:100%;width:100%}.hero-art-text{font-size:50px}.food-art-text{font-size:40px}}
