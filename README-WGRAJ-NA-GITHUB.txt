@@ -1,8 +1,5 @@
-V13 LANGUAGE FIX
+GOAT v14 — LANGUAGE WORKING FIX
 
-Ta wersja naprawia problem cache starego app.js.
-Nowy plik nazywa się app-v13.js i index.html ładuje właśnie jego.
+Naprawiony faktyczny błąd JavaScript z v11-v13: apply() uruchamiał applyGraphicAssets() zanim GOAT_ASSET_MAP został zainicjalizowany. To zatrzymywało skrypt przy starcie na zapisanym języku EN/DE/etc.
 
-Wgraj CAŁĄ zawartość tego folderu do głównego katalogu repo goat-website.
-Najważniejsze: index.html + app-v13.js + assets/.
-Po deploymencie odśwież stronę. Nie musisz kasować cache, bo nazwa JS jest nowa.
+Wgraj CAŁĄ zawartość paczki do root repozytorium goat-website i Commit changes. Po zielonym Pages deployment wykonaj Ctrl+F5.
