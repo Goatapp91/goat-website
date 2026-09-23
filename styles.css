@@ -211,20 +211,14 @@ body.foreign-lang .feature-grid article>p{width:100%!important}
  display:block!important;visibility:visible!important;opacity:1!important;
 }
 
-/* V23: language graphics from real files present in this repository */
+/* V24 embedded multilingual graphics: no external foreign asset paths */
 #asset-hero,#asset-system,#asset-food,#asset-middle,
 #asset-training,#asset-diet,#asset-progress{
-  display:block !important;
-  visibility:visible !important;
-  opacity:1 !important;
-  object-fit:contain !important;
-  object-position:center center !important;
+ display:block!important;
+ visibility:visible!important;
+ opacity:1!important;
+ object-fit:contain!important;
+ object-position:center center!important;
 }
-#asset-hero{width:610px !important;height:290px !important;max-width:100% !important;}
-#asset-system{width:590px !important;height:285px !important;max-width:100% !important;}
-#asset-food{width:536px !important;height:265px !important;max-width:100% !important;}
-#asset-middle{width:400px !important;height:275px !important;max-width:100% !important;margin:auto !important;}
-#asset-training{width:320px !important;height:165px !important;max-width:100% !important;margin:0 auto 18px !important;}
-#asset-diet{width:275px !important;height:165px !important;max-width:100% !important;margin:0 auto 18px !important;}
-#asset-progress{width:315px !important;height:165px !important;max-width:100% !important;margin:0 auto 18px !important;}
-.feature-grid article{overflow:visible !important;}
+#asset-training,#asset-diet,#asset-progress{margin:0 auto 18px!important;}
+.feature-grid article{overflow:visible!important;}
