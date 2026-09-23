@@ -106,24 +106,11 @@ body{background:#020203}
 .ai-section{grid-template-columns:.95fr 1fr .66fr;gap:52px}
 @media(max-width:1100px){.hero-goat{clip-path:inset(0 5%);transform:scale(1.06)}.ai-photo img{clip-path:inset(3% 6% 7%);transform:scale(1.08)}}
 
-/* FINAL MULTILINGUAL ART — single source of truth */
+/* V27 — language graphics inherit the exact original Polish layout.
+   No language-specific dimensions, offsets, scaling or hiding. */
 #asset-hero,#asset-system,#asset-middle,#asset-training,#asset-diet,#asset-progress,#asset-food{
- display:block;
- visibility:visible;
- opacity:1;
- object-fit:contain;
- object-position:center center;
-}
-#asset-hero{width:100%;height:250px;margin:0 0 26px}
-#asset-system{width:390px;height:150px;max-width:42%;margin:0}
-#asset-middle{width:330px;height:118px;margin:0 auto}
-.feature-grid article #asset-training,
-.feature-grid article #asset-diet,
-.feature-grid article #asset-progress{
- width:100%;height:92px;margin:0 auto 18px
-}
-.control-copy #asset-food{width:100%;height:165px;max-width:470px;margin:0 auto 18px}
-.feature-grid article{overflow:visible}
-@media(max-width:1000px){
- #asset-system{max-width:80%;width:390px;margin:0 auto}
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:contain!important;
+  object-position:center center!important;
 }
