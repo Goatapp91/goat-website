@@ -175,3 +175,18 @@ body.foreign-lang .steps-art{width:390px!important;max-width:100%!important;heig
  #asset-system{max-width:90%!important;margin:0 auto!important}
  #asset-hero,#asset-system,#asset-middle,#asset-training,#asset-diet,#asset-progress,#asset-food{max-width:100%!important;height:auto!important}
 }
+
+/* v21 normalized multilingual PNG slots */
+body.foreign-lang #asset-hero{width:610px!important;height:290px!important;max-width:610px!important;margin:0 auto 24px!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-system{width:590px!important;height:285px!important;max-width:590px!important;margin:0!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-food{width:536px!important;height:265px!important;max-width:536px!important;margin:0 auto 10px!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-middle{width:400px!important;height:275px!important;max-width:400px!important;margin:0 auto!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-training{width:320px!important;height:165px!important;max-width:320px!important;margin:0 auto!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-diet{width:275px!important;height:165px!important;max-width:275px!important;margin:0 auto!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang #asset-progress{width:315px!important;height:165px!important;max-width:315px!important;margin:0 auto!important;object-fit:contain!important;object-position:center!important}
+body.foreign-lang .discipline{height:275px!important;min-height:275px!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important}
+body.foreign-lang .feature-grid article{display:flex!important;flex-direction:column!important;align-items:center!important}
+body.foreign-lang .feature-grid article>p{width:100%!important}
+@media(max-width:700px){
+ body.foreign-lang #asset-hero,body.foreign-lang #asset-system,body.foreign-lang #asset-food,body.foreign-lang #asset-middle,body.foreign-lang #asset-training,body.foreign-lang #asset-diet,body.foreign-lang #asset-progress{max-width:100%!important;height:auto!important}
+}
