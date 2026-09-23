@@ -10,14 +10,15 @@ const GOAT_ASSET_MAP={
 };
 function applyGraphicAssets(code){
  const m=GOAT_ASSET_MAP[code]||GOAT_ASSET_MAP.pl;
- Object.entries(m).forEach(([k,src])=>{
-   const el=document.getElementById('asset-'+k);
-   if(!el) return;
+ for(const [key,src] of Object.entries(m)){
+   const el=document.getElementById('asset-'+key);
+   if(!el) continue;
+   el.removeAttribute('srcset');
    el.src=src;
    el.style.display='block';
    el.style.visibility='visible';
    el.style.opacity='1';
- });
+ }
 }
 
 const lang=document.querySelector('#lang');
@@ -41,7 +42,19 @@ function apply(code){
 if(lang){
   const saved=localStorage.getItem('goatLang')||'pl';
   lang.value=saved; apply(saved);
-  lang.addEventListener('change',e=>apply(e.target.value));
+  lang.addEventListener('change',e=>
+// V25 hard language switch: one source of truth.
+(function(){
+ const selector=document.getElementById('lang');
+ if(!selector) return;
+ selector.addEventListener('change', function(){
+   const code=this.value;
+   localStorage.setItem('goat-lang',code);
+   apply(code);
+ }, {capture:true});
+})();
+
+apply(e.target.value));
 }
 
 

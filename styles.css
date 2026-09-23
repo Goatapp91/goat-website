@@ -211,14 +211,17 @@ body.foreign-lang .feature-grid article>p{width:100%!important}
  display:block!important;visibility:visible!important;opacity:1!important;
 }
 
-/* V24 embedded multilingual graphics: no external foreign asset paths */
-#asset-hero,#asset-system,#asset-food,#asset-middle,
-#asset-training,#asset-diet,#asset-progress{
+/* V25 FINAL — keep Polish layout, only swap the artwork */
+#asset-hero,#asset-system,#asset-food,#asset-middle,#asset-training,#asset-diet,#asset-progress{
  display:block!important;
  visibility:visible!important;
  opacity:1!important;
  object-fit:contain!important;
  object-position:center center!important;
 }
-#asset-training,#asset-diet,#asset-progress{margin:0 auto 18px!important;}
 .feature-grid article{overflow:visible!important;}
+.feature-grid article #asset-training,
+.feature-grid article #asset-diet,
+.feature-grid article #asset-progress{
+ margin:0 auto 18px!important;
+}
