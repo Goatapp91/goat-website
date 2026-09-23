@@ -1,0 +1,1 @@
+v19: focused fix only for discipline, training/nutrition/progress, food slogan and small-steps slogan. Existing correct hero/system multilingual assets, prices and language engine retained. Polish version untouched.
