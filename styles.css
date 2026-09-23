@@ -190,3 +190,23 @@ body.foreign-lang .feature-grid article>p{width:100%!important}
 @media(max-width:700px){
  body.foreign-lang #asset-hero,body.foreign-lang #asset-system,body.foreign-lang #asset-food,body.foreign-lang #asset-middle,body.foreign-lang #asset-training,body.foreign-lang #asset-diet,body.foreign-lang #asset-progress{max-width:100%!important;height:auto!important}
 }
+
+/* v22 live-cache + visibility hard fix */
+#asset-training,#asset-diet,#asset-progress{
+ display:block!important;
+ visibility:visible!important;
+ opacity:1!important;
+ position:relative!important;
+ z-index:3!important;
+ flex:none!important;
+}
+.feature-grid article>img#asset-training,
+.feature-grid article>img#asset-diet,
+.feature-grid article>img#asset-progress{
+ margin:0 auto 20px!important;
+ object-fit:contain!important;
+ object-position:center!important;
+}
+#asset-middle,#asset-hero,#asset-system,#asset-food{
+ display:block!important;visibility:visible!important;opacity:1!important;
+}

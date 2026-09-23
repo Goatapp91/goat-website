@@ -10,13 +10,12 @@ const GOAT_ASSET_MAP={
 };
 function applyGraphicAssets(code){
  const m=GOAT_ASSET_MAP[code]||GOAT_ASSET_MAP.pl;
+ const stamp='v22';
  Object.entries(m).forEach(([k,src])=>{
    const el=document.getElementById('asset-'+k);
    if(!el) return;
-   const probe=new Image();
-   probe.onload=()=>{ el.src=src; };
-   probe.onerror=()=>{ console.error('Missing GOAT asset:',src); };
-   probe.src=src;
+   el.src=src+(src.includes('?')?'&':'?')+stamp;
+   el.alt=k+' '+code;
  });
 }
 
