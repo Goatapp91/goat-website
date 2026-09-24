@@ -1,6 +1,3 @@
-GOAT v38
-Training / Diet-Nutrition / Progress dla EN, DE, FR, IT, ES, PT.
-Tym razem rozmiar ustawiony względem GOAT AI: cały zestaw ikona + napis
-ma być wizualnie tak duży jak logo GOAT AI w czwartej karcie.
-Minimum 2x względem wcześniejszego artworku, z zachowaniem marginesu.
-Tylko 18 PNG. Bez zmian w kodzie i innych grafikach.
+Podmień obecny brand.png w głównym katalogu strony tym plikiem.
+Nazwa pozostaje brand.png, więc nie trzeba zmieniać index.html ani CSS.
+Logo: wariant 06, koza odwrócona bokiem + GOAT; usunięto FITNESS APP, slogan i ikony.
