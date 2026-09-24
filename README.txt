@@ -1,3 +1,1 @@
-Podmień tylko obecny plik ai-goat.png w głównym katalogu strony.
-Nie zmieniaj index.html ani styles.css.
-Nowy asset ma dokładnie 690x800 px, czyli tyle samo co obecny.
+Podmień tylko ai-goat.png. Grafika kozy została zmniejszona o około 12%, ale plik nadal ma 690x800 px, więc nie trzeba zmieniać CSS ani HTML.
