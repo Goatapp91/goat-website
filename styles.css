@@ -120,3 +120,11 @@ body{background:#020203}
  #asset-system{max-width:90%;margin-left:auto;margin-right:auto}
  #asset-hero,#asset-system,#asset-middle,#asset-training,#asset-diet,#asset-progress,#asset-food{max-width:100%;height:auto}
 }
+
+/* V31 — feature cards: force four equal columns. Do not let intrinsic image/text width shrink GOAT AI. */
+@media (min-width:1001px){
+  .feature-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;align-items:stretch!important}
+  .feature-grid>article{width:auto!important;min-width:0!important;max-width:none!important;display:flex!important;flex-direction:column!important}
+  .feature-grid>article>img{width:100%!important;max-width:100%!important;height:82px!important;object-fit:contain!important;object-position:center!important;margin:0 auto 20px!important}
+  .feature-grid>article>p{width:100%!important;max-width:none!important;overflow-wrap:normal!important;word-break:normal!important}
+}
