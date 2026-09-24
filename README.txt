@@ -1,13 +1,8 @@
-GOAT HEADER XL
-
-Podmień tylko:
-- styles.css
+FINALNA POPRAWKA LOGO
+Podmień w głównym katalogu repozytorium:
 - brand.png
+- styles.css
 
-Desktop:
-- pasek: 205 px wysokości
-- obszar logo: 390 x 195 px
-- logo: do 375 x 180 px
-- menu i przyciski wycentrowane pionowo
-
-Pozostałych sekcji strony nie zmieniono.
+Logo jest już wycięte jako sam znak: koza + czerwony okrąg + GOAT.
+Usunięto numer 06, linie planszy i zbędny fragment koncepcji.
+Zachowany jest powiększony pasek XL z poprzedniej wersji.
