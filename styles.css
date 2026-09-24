@@ -162,3 +162,32 @@ body{background:#020203}
   .brand{width:175px !important;height:80px !important;display:flex !important;align-items:center !important}
   .brand img{width:170px !important;height:76px !important;object-fit:contain !important;object-position:center !important;transform:none !important}
 }
+
+
+/* === GOAT HEADER + LOGO 06 XL — final override === */
+@media (min-width: 651px){
+  .nav{
+    height:205px !important;
+    min-height:205px !important;
+    align-items:center !important;
+  }
+  .brand{
+    width:390px !important;
+    height:195px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    overflow:hidden !important;
+  }
+  .brand img{
+    width:375px !important;
+    height:180px !important;
+    object-fit:contain !important;
+    object-position:center !important;
+    transform:none !important;
+    display:block !important;
+  }
+  .nav nav,.actions{
+    align-items:center !important;
+  }
+}

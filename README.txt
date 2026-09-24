@@ -1,14 +1,13 @@
-GOAT – szerszy pasek + logo 06
+GOAT HEADER XL
 
-Podmień w głównym katalogu repozytorium tylko:
-1. brand.png
-2. styles.css
+Podmień tylko:
+- styles.css
+- brand.png
 
-Zmiany:
-- pasek na komputerze: 132 px wysokości,
-- logo 06: większe, 275 x 118 px, wycentrowane,
-- brak przycinania przez object-fit: contain,
-- menu i przyciski pozostają wycentrowane w pionie,
-- wersja mobilna pozostaje niższa.
+Desktop:
+- pasek: 205 px wysokości
+- obszar logo: 390 x 195 px
+- logo: do 375 x 180 px
+- menu i przyciski wycentrowane pionowo
 
-Nie zmieniono innych elementów strony.
+Pozostałych sekcji strony nie zmieniono.
