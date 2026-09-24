@@ -239,3 +239,92 @@ body{background:#020203}
     font-weight:800 !important;
   }
 }
+
+
+/* === GOAT anchor navigation offset fix ===
+   Prevents the tall header from covering the top of sections after clicking
+   Funkcje / GOAT PRO / Cennik / FAQ.
+*/
+html{
+  scroll-padding-top: 235px !important;
+}
+section[id],
+[id="features"],
+[id="pro"],
+[id="pricing"],
+[id="faq"]{
+  scroll-margin-top: 235px !important;
+}
+
+@media (max-width:650px){
+  html{scroll-padding-top:100px !important;}
+  section[id],
+  [id="features"],
+  [id="pro"],
+  [id="pricing"],
+  [id="faq"]{
+    scroll-margin-top:100px !important;
+  }
+}
+
+
+/* === FOOTER LOGO CLIPPING FIX === */
+footer .brand,
+.footer .brand,
+.site-footer .brand,
+footer .footer-brand,
+.footer .footer-brand,
+.site-footer .footer-brand{
+  width:360px !important;
+  max-width:360px !important;
+  height:150px !important;
+  min-height:150px !important;
+  overflow:visible !important;
+  transform:none !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+}
+
+footer .brand img,
+.footer .brand img,
+.site-footer .brand img,
+footer .footer-brand img,
+.footer .footer-brand img,
+.site-footer .footer-brand img{
+  width:330px !important;
+  max-width:330px !important;
+  height:135px !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+  transform:none !important;
+  display:block !important;
+}
+
+footer,
+.footer,
+.site-footer{
+  overflow:visible !important;
+}
+
+@media (max-width:650px){
+  footer .brand,
+  .footer .brand,
+  .site-footer .brand,
+  footer .footer-brand,
+  .footer .footer-brand,
+  .site-footer .footer-brand{
+    width:240px !important;
+    height:105px !important;
+    min-height:105px !important;
+  }
+  footer .brand img,
+  .footer .brand img,
+  .site-footer .brand img,
+  footer .footer-brand img,
+  .footer .footer-brand img,
+  .site-footer .footer-brand img{
+    width:225px !important;
+    height:95px !important;
+  }
+}
