@@ -1,9 +1,5 @@
-GOAT v35 — poprawka małych błędów
-- usunięte techniczne napisy typu EN / TITLE / MIDDLE TITLE z grafik,
-- dodane czerwone ikony z polskiej wersji:
-  TRAINING = hantla, NUTRITION/DIET = sztućce, PROGRESS = słupki,
-- zachowany obecny styl napisów,
-- GOAT AI pozostawiony bez zmian,
-- bez zmian HTML/CSS/JS.
-
-Podmień wszystkie lang-*.png z tego ZIP-a w tym samym miejscu co obecne assety.
+GOAT v36 — tylko korekta wielkości trzech napisów w kartach.
+Powiększone: Training, Diet/Nutrition, Progress.
+Ikony pozostają razem z napisami.
+Nie zmieniono hero, system, discipline, progress slogan ani GOAT AI.
+Podmień tylko 18 PNG z tego ZIP-a.
