@@ -1,1 +1,1 @@
-Podmień tylko ai-goat.png. Grafika kozy została zmniejszona o około 12%, ale plik nadal ma 690x800 px, więc nie trzeba zmieniać CSS ani HTML.
+Podmień tylko ai-goat.png. Koza została zmniejszona do 80% pierwotnej wielkości i lekko przesunięta w górę, żeby hantla była lepiej widoczna. Plik nadal ma 690x800 px — bez zmian CSS/HTML.
