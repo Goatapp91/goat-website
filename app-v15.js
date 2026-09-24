@@ -51,18 +51,12 @@ function goatExactPrices(code){
 }
 
 
-// FINAL anchor navigation fix for tall sticky GOAT header.
+// Funkcje / Features: always go to the absolute top of the page.
 document.addEventListener("click", function(e){
-  const a = e.target.closest('a[href^="#"]');
+  const a = e.target.closest('a[href="#features"]');
   if(!a) return;
-  const href = a.getAttribute("href");
-  if(!href || href === "#") return;
-  const target = document.querySelector(href);
-  if(!target) return;
   e.preventDefault();
-  const header = document.querySelector(".nav");
-  const offset = (header ? header.getBoundingClientRect().height : 0) + 18;
-  const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-  window.scrollTo({top:y, behavior:"smooth"});
-  history.replaceState(null, "", href);
-});
+  e.stopImmediatePropagation();
+  history.replaceState(null, "", "#top");
+  window.scrollTo({top:0, left:0, behavior:"smooth"});
+}, true);

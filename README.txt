@@ -1,15 +1,10 @@
-GOAT – REAL SELECTORS FIX
-
-Ta wersja została przygotowana na podstawie faktycznego index.html strony.
+GOAT – poprawka zgodnie z poleceniem
 
 Podmień:
-1. styles.css
-2. app-v15.js
+- styles.css
+- app-v15.js
 
-Naprawione:
-- stopka: prawdziwy selektor to footer > img, więc logo nie jest już cięte przez stare width:190px/object-fit:cover,
-- stopka dostaje szerszą pierwszą kolumnę na pełne logo,
-- przewijanie Funkcje / GOAT PRO / Cennik / FAQ uwzględnia RZECZYWISTĄ wysokość sticky headera,
-- JS liczy wysokość nagłówka dynamicznie, więc nie powinno już zasłaniać początku sekcji.
-
-Nie podmieniaj brand.png ani ai-goat.png tym ZIP-em.
+1. Przywrócony jest DUŻY górny pasek z wersji HEADER-LOGO06-FIXED-V2.
+2. Kliknięcie „Funkcje / Features” przewija stronę na absolutną górę (0 px).
+3. Zachowana jest poprawka pełnego logo w stopce.
+4. Nie podmieniaj brand.png ani ai-goat.png.
