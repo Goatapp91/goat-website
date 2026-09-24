@@ -1,11 +1,9 @@
-GOAT HERO – wariant 04 martwy ciąg
+WAŻNE: strona używa dokładnie pliku hero-goat.png.
 
-Plik:
-hero-goat-deadlift.jpg
+Podmień na GitHubie TYLKO obecny:
+hero-goat.png
 
-To jest sama prawa grafika: koza wykonująca martwy ciąg + siłownia.
-Nie zawiera wygenerowanych napisów ani przycisków.
+tym plikiem z ZIP-a.
 
-Aby podmienić obecne duże zdjęcie kozy w pierwszym planie, trzeba wskazać
-w index.html/CSS obecny plik grafiki hero i zastąpić go tym plikiem.
-Pozostałe teksty strony mają zostać HTML-em, tak jak obecnie.
+Nie trzeba zmieniać index.html, CSS ani JavaScript.
+Po commicie odśwież stronę Ctrl+F5.
