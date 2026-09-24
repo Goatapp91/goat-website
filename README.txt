@@ -1,10 +1,8 @@
-GOAT – poprawka zgodnie z poleceniem
+Podmień styles.css i app-v15.js.
 
-Podmień:
-- styles.css
-- app-v15.js
-
-1. Przywrócony jest DUŻY górny pasek z wersji HEADER-LOGO06-FIXED-V2.
-2. Kliknięcie „Funkcje / Features” przewija stronę na absolutną górę (0 px).
-3. Zachowana jest poprawka pełnego logo w stopce.
-4. Nie podmieniaj brand.png ani ai-goat.png.
+Ta wersja wymusza na desktopie rzeczywistą wysokość górnego paska 220 px
+(na screenie poprzedni miał około 95 px).
+Zachowuje:
+- kliknięcie Funkcje -> sama góra strony,
+- poprawkę stopki,
+- obecne logo i grafiki.

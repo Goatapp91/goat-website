@@ -254,3 +254,51 @@ footer{
   grid-template-columns:minmax(360px,1.4fr) .7fr .8fr 1fr !important;
   overflow:visible !important;
 }
+
+
+/* === TALL HEADER FINAL OVERRIDE === */
+@media (min-width:651px){
+  header,
+  .topbar,
+  .header,
+  .site-header{
+    min-height:220px !important;
+  }
+
+  .nav{
+    height:220px !important;
+    min-height:220px !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    align-items:center !important;
+  }
+
+  .nav .brand{
+    height:205px !important;
+    min-height:205px !important;
+    width:430px !important;
+    overflow:visible !important;
+    display:flex !important;
+    align-items:center !important;
+  }
+
+  .nav .brand img{
+    width:410px !important;
+    height:190px !important;
+    max-height:190px !important;
+    object-fit:contain !important;
+    object-position:left center !important;
+  }
+
+  .nav nav a{
+    font-size:22px !important;
+    font-weight:800 !important;
+  }
+
+  .nav .actions,
+  .nav nav{
+    align-self:stretch !important;
+    display:flex !important;
+    align-items:center !important;
+  }
+}
