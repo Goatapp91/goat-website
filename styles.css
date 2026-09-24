@@ -128,3 +128,37 @@ body{background:#020203}
   .feature-grid>article>img{width:100%!important;max-width:100%!important;height:82px!important;object-fit:contain!important;object-position:center!important;margin:0 auto 20px!important}
   .feature-grid>article>p{width:100%!important;max-width:none!important;overflow-wrap:normal!important;word-break:normal!important}
 }
+
+
+/* === GOAT HEADER + LOGO 06 FINAL OVERRIDE === */
+@media (min-width: 651px){
+  .nav{
+    height:132px !important;
+    min-height:132px !important;
+    align-items:center !important;
+  }
+  .brand{
+    width:285px !important;
+    height:124px !important;
+    display:flex !important;
+    align-items:center !important;
+    overflow:hidden !important;
+  }
+  .brand img{
+    width:275px !important;
+    height:118px !important;
+    object-fit:contain !important;
+    object-position:center !important;
+    transform:none !important;
+    display:block !important;
+  }
+  .nav nav,.actions{
+    align-items:center !important;
+  }
+}
+/* Mobile stays compact */
+@media (max-width:650px){
+  .nav{height:86px !important;min-height:86px !important}
+  .brand{width:175px !important;height:80px !important;display:flex !important;align-items:center !important}
+  .brand img{width:170px !important;height:76px !important;object-fit:contain !important;object-position:center !important;transform:none !important}
+}

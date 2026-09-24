@@ -1,3 +1,14 @@
-Podmień obecny brand.png w głównym katalogu strony tym plikiem.
-Nazwa pozostaje brand.png, więc nie trzeba zmieniać index.html ani CSS.
-Logo: wariant 06, koza odwrócona bokiem + GOAT; usunięto FITNESS APP, slogan i ikony.
+GOAT – szerszy pasek + logo 06
+
+Podmień w głównym katalogu repozytorium tylko:
+1. brand.png
+2. styles.css
+
+Zmiany:
+- pasek na komputerze: 132 px wysokości,
+- logo 06: większe, 275 x 118 px, wycentrowane,
+- brak przycinania przez object-fit: contain,
+- menu i przyciski pozostają wycentrowane w pionie,
+- wersja mobilna pozostaje niższa.
+
+Nie zmieniono innych elementów strony.
