@@ -49,3 +49,20 @@ function goatExactPrices(code){
  if(m)m.textContent=code==='pl'?'29,90 zł':'7,99 €';
  if(y)y.textContent=code==='pl'?'199,90 zł':'49,99 €';
 }
+
+
+// FINAL anchor navigation fix for tall sticky GOAT header.
+document.addEventListener("click", function(e){
+  const a = e.target.closest('a[href^="#"]');
+  if(!a) return;
+  const href = a.getAttribute("href");
+  if(!href || href === "#") return;
+  const target = document.querySelector(href);
+  if(!target) return;
+  e.preventDefault();
+  const header = document.querySelector(".nav");
+  const offset = (header ? header.getBoundingClientRect().height : 0) + 18;
+  const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+  window.scrollTo({top:y, behavior:"smooth"});
+  history.replaceState(null, "", href);
+});

@@ -130,201 +130,53 @@ body{background:#020203}
 }
 
 
-/* === GOAT HEADER + LOGO 06 FINAL OVERRIDE === */
-@media (min-width: 651px){
-  .nav{
-    height:132px !important;
-    min-height:132px !important;
-    align-items:center !important;
-  }
-  .brand{
-    width:285px !important;
-    height:124px !important;
-    display:flex !important;
-    align-items:center !important;
-    overflow:hidden !important;
-  }
-  .brand img{
-    width:275px !important;
-    height:118px !important;
-    object-fit:contain !important;
-    object-position:center !important;
-    transform:none !important;
-    display:block !important;
-  }
-  .nav nav,.actions{
-    align-items:center !important;
-  }
-}
-/* Mobile stays compact */
-@media (max-width:650px){
-  .nav{height:86px !important;min-height:86px !important}
-  .brand{width:175px !important;height:80px !important;display:flex !important;align-items:center !important}
-  .brand img{width:170px !important;height:76px !important;object-fit:contain !important;object-position:center !important;transform:none !important}
-}
+/* === FINAL FIX BASED ON ACTUAL INDEX.HTML === */
 
-
-/* === GOAT HEADER + LOGO 06 XL — final override === */
-@media (min-width: 651px){
-  .nav{
-    height:205px !important;
-    min-height:205px !important;
-    align-items:center !important;
-  }
-  .brand{
-    width:390px !important;
-    height:195px !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    overflow:hidden !important;
-  }
-  .brand img{
-    width:375px !important;
-    height:180px !important;
-    object-fit:contain !important;
-    object-position:center !important;
-    transform:none !important;
-    display:block !important;
-  }
-  .nav nav,.actions{
-    align-items:center !important;
-  }
-}
-
-
-/* === HEADER FINAL V2: full logo + larger navigation === */
-@media (min-width: 651px){
-  .nav{
-    height:220px !important;
-    min-height:220px !important;
-    align-items:center !important;
-  }
-  .brand{
-    width:430px !important;
-    height:210px !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    overflow:visible !important;
-    transform:translateY(-10px) !important;
-  }
-  .brand img{
-    width:410px !important;
-    height:190px !important;
-    max-width:none !important;
-    object-fit:contain !important;
-    object-position:center !important;
-    transform:none !important;
-    display:block !important;
-  }
-  .nav nav{
-    gap:64px !important;
-    align-items:center !important;
-  }
-  .nav nav a{
-    font-size:22px !important;
-    line-height:1.1 !important;
-    font-weight:800 !important;
-  }
-  .actions{
-    gap:18px !important;
-    align-items:center !important;
-  }
-  .actions select,
-  .actions .btn,
-  .actions a,
-  .lang{
-    font-size:20px !important;
-    font-weight:800 !important;
-  }
-}
-
-
-/* === GOAT anchor navigation offset fix ===
-   Prevents the tall header from covering the top of sections after clicking
-   Funkcje / GOAT PRO / Cennik / FAQ.
-*/
+/* The actual header is sticky and was enlarged later. Offset ALL real anchors. */
 html{
-  scroll-padding-top: 235px !important;
+  scroll-padding-top:235px !important;
 }
-section[id],
-[id="features"],
-[id="pro"],
-[id="pricing"],
-[id="faq"]{
-  scroll-margin-top: 235px !important;
-}
-
-@media (max-width:650px){
-  html{scroll-padding-top:100px !important;}
-  section[id],
-  [id="features"],
-  [id="pro"],
-  [id="pricing"],
-  [id="faq"]{
-    scroll-margin-top:100px !important;
-  }
+#features,
+#ai,
+#pricing,
+#faq,
+#download{
+  scroll-margin-top:235px !important;
 }
 
-
-/* === FOOTER LOGO CLIPPING FIX === */
-footer .brand,
-.footer .brand,
-.site-footer .brand,
-footer .footer-brand,
-.footer .footer-brand,
-.site-footer .footer-brand{
+/* Actual footer markup is: <footer><img src="brand.png"> ... */
+footer > img{
   width:360px !important;
-  max-width:360px !important;
   height:150px !important;
-  min-height:150px !important;
-  overflow:visible !important;
-  transform:none !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-}
-
-footer .brand img,
-.footer .brand img,
-.site-footer .brand img,
-footer .footer-brand img,
-.footer .footer-brand img,
-.site-footer .footer-brand img{
-  width:330px !important;
-  max-width:330px !important;
-  height:135px !important;
+  max-width:100% !important;
   object-fit:contain !important;
   object-position:left center !important;
   transform:none !important;
   display:block !important;
 }
 
-footer,
-.footer,
-.site-footer{
+/* Give the first footer grid column enough room for the complete logo. */
+footer{
+  grid-template-columns:minmax(360px,1.4fr) .7fr .8fr 1fr !important;
   overflow:visible !important;
 }
 
-@media (max-width:650px){
-  footer .brand,
-  .footer .brand,
-  .site-footer .brand,
-  footer .footer-brand,
-  .footer .footer-brand,
-  .site-footer .footer-brand{
-    width:240px !important;
-    height:105px !important;
-    min-height:105px !important;
+@media(max-width:1000px){
+  footer{
+    grid-template-columns:1fr 1fr !important;
   }
-  footer .brand img,
-  .footer .brand img,
-  .site-footer .brand img,
-  footer .footer-brand img,
-  .footer .footer-brand img,
-  .site-footer .footer-brand img{
-    width:225px !important;
-    height:95px !important;
+  footer > img{
+    width:320px !important;
+    height:135px !important;
+  }
+}
+
+@media(max-width:650px){
+  html{scroll-padding-top:100px !important;}
+  #features,#ai,#pricing,#faq,#download{scroll-margin-top:100px !important;}
+  footer{grid-template-columns:1fr !important;}
+  footer > img{
+    width:260px !important;
+    height:110px !important;
   }
 }
