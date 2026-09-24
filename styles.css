@@ -191,3 +191,51 @@ body{background:#020203}
     align-items:center !important;
   }
 }
+
+
+/* === HEADER FINAL V2: full logo + larger navigation === */
+@media (min-width: 651px){
+  .nav{
+    height:220px !important;
+    min-height:220px !important;
+    align-items:center !important;
+  }
+  .brand{
+    width:430px !important;
+    height:210px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    overflow:visible !important;
+    transform:translateY(-10px) !important;
+  }
+  .brand img{
+    width:410px !important;
+    height:190px !important;
+    max-width:none !important;
+    object-fit:contain !important;
+    object-position:center !important;
+    transform:none !important;
+    display:block !important;
+  }
+  .nav nav{
+    gap:64px !important;
+    align-items:center !important;
+  }
+  .nav nav a{
+    font-size:22px !important;
+    line-height:1.1 !important;
+    font-weight:800 !important;
+  }
+  .actions{
+    gap:18px !important;
+    align-items:center !important;
+  }
+  .actions select,
+  .actions .btn,
+  .actions a,
+  .lang{
+    font-size:20px !important;
+    font-weight:800 !important;
+  }
+}
