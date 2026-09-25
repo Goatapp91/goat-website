@@ -1,1 +1,1 @@
-Podmień TYLKO hero-goat-deadlift-v2.png. Koza została mocno zmniejszona do 58% poprzedniej wielkości, bez zmian HTML/CSS/JS.
+Podmień tylko hero-goat-deadlift-v2.png. Zawartość obrazu zmniejszona dokładnie o 100 px: 1100x1000 -> 1000x900.
