@@ -302,3 +302,14 @@ footer{
     align-items:center !important;
   }
 }
+
+/* HERO FULL IMAGE FIX */
+.hero-goat{
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+}

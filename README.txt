@@ -1,1 +1,1 @@
-Podmień tylko hero-goat-deadlift-v2.png. Grafika została zmniejszona o kolejne 100 px.
+Podmień tylko styles.css. Hero używa teraz object-fit: contain, żeby pokazać cały obraz bez obcinania rogów i sztangi.
