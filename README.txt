@@ -1,1 +1,1 @@
-Podmień tylko hero-goat-deadlift-v2.png. Zawartość obrazu zmniejszona dokładnie o 100 px: 1100x1000 -> 1000x900.
+Podmień tylko hero-goat-deadlift-v2.png. Grafika została zmniejszona o kolejne 100 px.
